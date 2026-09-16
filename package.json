@@ -1,0 +1,38 @@
+{
+  "name": "@yukikisaku/pi-disable-debug-shortcut",
+  "version": "0.1.0",
+  "description": "Disable Pi's Ctrl+Shift+D debug shortcut in TUI sessions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "yuki-kisaku",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukikisaku/pi-disable-debug-shortcut.git"
+  },
+  "homepage": "https://github.com/yukikisaku/pi-disable-debug-shortcut#readme",
+  "bugs": {
+    "url": "https://github.com/yukikisaku/pi-disable-debug-shortcut/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension"
+  ],
+  "files": [
+    "index.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
